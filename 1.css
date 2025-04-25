@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #12121a;
+  padding: 25px 35px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00d1ff;
+}
+
+section {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 60px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d1ff;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #00d1ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  text-align: left;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+li {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+a {
+  color: #00d1ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout adjustments */
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 40px;
+  color: #ffffff;
+  max-width: 1400px;
+  margin: 60px auto;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+
+.intro-image {
+  flex-shrink: 0;
+}
+
+.intro-text {
+  max-width: 500px;
+  flex: 1;
+  text-align: left;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Arrows */
+.arrow-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* back button */
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #00d1ff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #100d5b;
+}
